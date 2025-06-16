@@ -19,7 +19,7 @@ import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 import MedicalCTAComponent from "@/components/ui/medicalCTAComponent";
 
-export default function HomeSection() {
+export default function BaseSelectionScreen() {
   return (
     <>
     <Navbar/>
