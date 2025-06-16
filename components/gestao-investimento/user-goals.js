@@ -99,7 +99,7 @@ export default function GoalsScreen() {
         { label: "Prazo (meses)", key: "targetMonths", placeholder: "Ex: 12" }
       ].map((field, idx) => (
         <div key={idx}>
-          <Label className="text-sm font-medium text-gray-700">{field.label}</Label>
+          <Label className="text-md font-medium text-gray-700">{field.label}</Label>
           <Input
             value={newGoal[field.key]}
             onChange={(e) => setNewGoal({ ...newGoal, [field.key]: e.target.value })}
@@ -163,7 +163,7 @@ export default function GoalsScreen() {
             className="rounded-xl bg-gray-50 hover:bg-white border border-gray-200 p-5 shadow-sm transition-all"
           >
             <h3 className="text-lg font-semibold text-brandKoocher-vividPurple mb-2">{g.name}</h3>
-            <ul className="text-sm text-gray-700 space-y-1">
+            <ul className="text-md text-gray-700 space-y-1">
               <li><strong>Poupado:</strong> R$ {g.Poupado}</li>
               <li><strong>Faltando:</strong> R$ {g.Faltando}</li>
               <li><strong>Mensal Sugerido:</strong> R$ {g.mensalRecomendado}</li>

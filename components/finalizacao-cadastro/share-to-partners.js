@@ -76,7 +76,7 @@ export default function ShareToPartners({ onNext, onBack, updateFormData, formDa
               className="h-12"
             />
           </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {error && <p className="text-red-500 text-md">{error}</p>}
           <Button
             type="submit"
             className="w-full bg-brandKoocher-vividPurple hover:bg-brandKoocher-deepPurple text-white h-12 flex items-center justify-center gap-2"
@@ -93,7 +93,7 @@ export default function ShareToPartners({ onNext, onBack, updateFormData, formDa
               <div key={index} className="flex items-center justify-between bg-gray-100 p-3 rounded-md">
                 <div>
                   <p className="font-medium">{partner.name}</p>
-                  <p className="text-sm text-gray-600">{partner.email}</p>
+                  <p className="text-md text-gray-600">{partner.email}</p>
                 </div>
                 <Button
                   type="button"
@@ -108,7 +108,7 @@ export default function ShareToPartners({ onNext, onBack, updateFormData, formDa
           </div>
         )}
 
-        <p className="text-sm text-gray-600">
+        <p className="text-md text-gray-600">
           Um email será enviado para cada sócio com instruções para completar o cadastro.
         </p>
 

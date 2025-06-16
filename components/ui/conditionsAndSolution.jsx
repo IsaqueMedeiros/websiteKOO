@@ -106,10 +106,10 @@ export default function ConditionsAndSolution() {
                           <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover/card:text-purple-700 transition-colors">
                             {item.title}
                           </h3>
-                          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                          <p className="text-md text-gray-600 leading-relaxed mb-3">
                             {item.desc}
                           </p>
-                          <button className="text-sm font-medium text-purple-600 hover:text-purple-700 flex items-center gap-1 group-hover/card:gap-2 transition-all">
+                          <button className="text-md font-medium text-purple-600 hover:text-purple-700 flex items-center gap-1 group-hover/card:gap-2 transition-all">
                             Conferir
                             <ChevronRight className="w-4 h-4" />
                           </button>
@@ -153,14 +153,14 @@ export default function ConditionsAndSolution() {
                       <h3 className="text-lg font-bold text-white mb-2">
                         {title}
                       </h3>
-                      <p className="text-sm text-purple-100 leading-relaxed">
+                      <p className="text-md text-purple-100 leading-relaxed">
                         {desc}
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-white/20">
+                <div className="mt-24 pt-6 border-t border-white/20">
                   <button className="w-full sm:w-auto bg-white text-purple-700 hover:bg-gray-50 font-semibold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group-hover:scale-105">
                     Começar agora
                     <ChevronRight className="w-5 h-5" />

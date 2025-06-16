@@ -52,7 +52,7 @@ export default function PersonalDataAdditionalForm({ onNext, onBack, updateFormD
               className={`h-12 ${errors.nickname ? "border-red-500" : ""}`}
               placeholder="Digite seu apelido"
             />
-            {errors.nickname && <p className="text-sm text-red-500">{errors.nickname}</p>}
+            {errors.nickname && <p className="text-md text-red-500">{errors.nickname}</p>}
           </div>
 
           <div className="space-y-2">
@@ -70,7 +70,7 @@ export default function PersonalDataAdditionalForm({ onNext, onBack, updateFormD
                 <SelectItem value="viuvo">Viúvo(a)</SelectItem>
               </SelectContent>
             </Select>
-            {errors.maritalStatus && <p className="text-sm text-red-500">{errors.maritalStatus}</p>}
+            {errors.maritalStatus && <p className="text-md text-red-500">{errors.maritalStatus}</p>}
           </div>
 
           <div className="space-y-2">

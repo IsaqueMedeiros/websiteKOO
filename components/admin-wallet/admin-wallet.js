@@ -170,7 +170,7 @@ export default function AdminDashboard() {
       </div>
     </div>
 
-    <p className={`text-sm font-semibold ${totalPercentual > 100 ? "text-red-600" : "text-green-600"}`}>
+    <p className={`text-md font-semibold ${totalPercentual > 100 ? "text-red-600" : "text-green-600"}`}>
       Alocação total: {totalPercentual}% {totalPercentual > 100 ? "(Excedido!)" : ""}
     </p>
   </section>
@@ -259,9 +259,9 @@ export default function AdminDashboard() {
               </Button>
             </div>
           </div>
-          <p className="text-sm text-gray-600">Tipo: <strong>{inv.tipo}</strong></p>
-          <p className="text-sm text-gray-600">Percentual: <strong>{inv.percentual}%</strong></p>
-          <p className="text-sm text-gray-600">Perfil:
+          <p className="text-md text-gray-600">Tipo: <strong>{inv.tipo}</strong></p>
+          <p className="text-md text-gray-600">Percentual: <strong>{inv.percentual}%</strong></p>
+          <p className="text-md text-gray-600">Perfil:
             <span className={`ml-2 px-2 py-0.5 rounded-full text-xs font-medium ${profileColors[inv.perfil] || "bg-gray-200 text-gray-600"}`}>
               {inv.perfil}
             </span>
@@ -273,7 +273,7 @@ export default function AdminDashboard() {
     </div>
 
     {sortedInvestments.length === 0 && (
-      <p className="text-center text-sm text-gray-500">Nenhum investimento cadastrado ainda.</p>
+      <p className="text-center text-md text-gray-500">Nenhum investimento cadastrado ainda.</p>
     )}
   </section>
 

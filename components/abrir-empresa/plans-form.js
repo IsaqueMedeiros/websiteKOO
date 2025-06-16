@@ -83,7 +83,7 @@ export default function PlansForm({ onNext, onBack, updateFormData, formData }) 
                 </div>
 
                 <div className="space-y-1">
-                  <div className="text-sm text-gray-500">a partir de</div>
+                  <div className="text-md text-gray-500">a partir de</div>
                   <div className="text-gray-500">
                     R$ <span className="line-through">{plan.originalPrice}</span> por
                   </div>
@@ -106,7 +106,7 @@ export default function PlansForm({ onNext, onBack, updateFormData, formData }) 
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <Check className="h-5 w-5 text-primary shrink-0" />
-                      <span className="text-sm">{feature}</span>
+                      <span className="text-md">{feature}</span>
                     </li>
                   ))}
                 </ul>

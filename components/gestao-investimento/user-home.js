@@ -78,7 +78,7 @@ export default function HomeScreen() {
               { label: "Data", key: "data", placeholder: "2025-06-02", type: "date" },
             ].map(({ label, key, placeholder, type = "text" }, idx) => (
               <div key={idx} className="space-y-1.5">
-                <Label className="text-sm font-medium text-gray-700">{label}</Label>
+                <Label className="text-md font-medium text-gray-700">{label}</Label>
                 <Input
                   type={type}
                   value={newExpense[key]}
@@ -91,11 +91,11 @@ export default function HomeScreen() {
 
             {/* Tipo */}
             <div className="space-y-1.5">
-              <Label className="text-sm font-medium text-gray-700">Tipo</Label>
+              <Label className="text-md font-medium text-gray-700">Tipo</Label>
               <select
                 value={newExpense.tipo}
                 onChange={(e) => setNewExpense({ ...newExpense, tipo: e.target.value })}
-                className="w-full border-gray-300 rounded-md shadow-sm px-3 py-2 text-sm focus:border-brandKoocher-vividPurple focus:ring-brandKoocher-vividPurple"
+                className="w-full border-gray-300 rounded-md shadow-sm px-3 py-2 text-md focus:border-brandKoocher-vividPurple focus:ring-brandKoocher-vividPurple"
               >
                 <option value="Fixo">Fixo</option>
                 <option value="Esporádico">Esporádico</option>
@@ -105,7 +105,7 @@ export default function HomeScreen() {
 
           {/* Tabela */}
           <div className="overflow-x-auto rounded-md border border-gray-200 shadow-inner">
-            <table className="min-w-full text-sm text-gray-700 bg-white rounded-lg overflow-hidden">
+            <table className="min-w-full text-md text-gray-700 bg-white rounded-lg overflow-hidden">
               <thead className="bg-gray-50 text-left">
                 <tr>
                   <th className="p-3 font-semibold">Categoria</th>
@@ -142,7 +142,7 @@ export default function HomeScreen() {
                   nameKey="name"
                   outerRadius={100}
                   label
-                  className="text-sm"
+                  className="text-md"
                 >
                   {pieData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

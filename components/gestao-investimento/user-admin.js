@@ -175,8 +175,8 @@ function handleUpdateProfile() {
       {suggestions.map((s, i) => (
         <li key={i} className="p-3 border border-gray-200 rounded bg-white hover:shadow transition">
           <p className="font-bold text-brandKoocher-vividPurple">{s.nome}</p>
-          <p className="text-sm text-gray-700">Risco: <strong>{s.risco}</strong></p>
-          <p className="text-sm text-gray-700">Rendimento: <strong>{s.rendimento}</strong></p>
+          <p className="text-md text-gray-700">Risco: <strong>{s.risco}</strong></p>
+          <p className="text-md text-gray-700">Rendimento: <strong>{s.rendimento}</strong></p>
         </li>
       ))}
     </ul>
@@ -196,8 +196,8 @@ function handleUpdateProfile() {
             <p className="font-bold text-brandKoocher-vividPurple">{item.nome}</p>
             {item.destaque && <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">🔥 Destaque</span>}
           </div>
-          <p className="text-sm text-gray-700">Risco: <strong>{item.risco}</strong></p>
-          <p className="text-sm text-gray-700">Rendimento: <strong>{item.rendimento}</strong></p>
+          <p className="text-md text-gray-700">Risco: <strong>{item.risco}</strong></p>
+          <p className="text-md text-gray-700">Rendimento: <strong>{item.rendimento}</strong></p>
         </li>
       ))}
     </ul>

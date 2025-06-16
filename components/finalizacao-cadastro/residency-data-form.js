@@ -68,7 +68,7 @@ export default function ResidencyDataForm({ onNext, onBack, updateFormData, form
                 </Label>
               </div>
             </RadioGroup>
-            {errors.residency && <p className="text-sm text-red-500">{errors.residency}</p>}
+            {errors.residency && <p className="text-md text-red-500">{errors.residency}</p>}
           </div>
 
           {isDoingResidency === "sim" && (
@@ -90,8 +90,8 @@ export default function ResidencyDataForm({ onNext, onBack, updateFormData, form
                     <Upload className="h-4 w-4" />
                     Fazer upload de arquivos
                   </label>
-                  {uploadedFile && <p className="text-sm text-gray-600">{uploadedFile.name}</p>}
-                  {errors.document && <p className="text-sm text-red-500">{errors.document}</p>}
+                  {uploadedFile && <p className="text-md text-gray-600">{uploadedFile.name}</p>}
+                  {errors.document && <p className="text-md text-red-500">{errors.document}</p>}
                 </div>
               </div>
             </div>

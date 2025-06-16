@@ -36,7 +36,7 @@ export default function InviteFriendForm({ onBack, onNext }) {
 
           <div className="bg-brandKoocher-neonLime text-brandKoocher-deepPurple p-4 rounded-lg">
             <h3 className="font-semibold text-primary">Você indica e ganha!</h3>
-            <p className="text-sm text-gray-700 mt-1">
+            <p className="text-md text-gray-700 mt-1">
               Receba uma isenção de mensalidade a cada amigo(a) indicado(a) que nos contratar.
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function InviteFriendForm({ onBack, onNext }) {
 
         <div className="space-y-6">
           <div className="space-y-2">
-            <p className="text-sm text-gray-600">
+            <p className="text-md text-gray-600">
               Você pode optar por compartilhar o seu link de indicação. Basta clicar no botão abaixo:
             </p>
             <Button

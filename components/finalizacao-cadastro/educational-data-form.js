@@ -53,7 +53,7 @@ export default function EducationalDataForm({ onNext, onBack, updateFormData, fo
               className={`h-12 ${errors.crm ? "border-red-500" : ""}`}
               placeholder="Digite seu CRM"
             />
-            {errors.crm && <p className="text-sm text-red-500">{errors.crm}</p>}
+            {errors.crm && <p className="text-md text-red-500">{errors.crm}</p>}
           </div>
 
           <div className="space-y-2">
@@ -67,7 +67,7 @@ export default function EducationalDataForm({ onNext, onBack, updateFormData, fo
               className={`h-12 ${errors.university ? "border-red-500" : ""}`}
               placeholder="Digite sua faculdade"
             />
-            {errors.university && <p className="text-sm text-red-500">{errors.university}</p>}
+            {errors.university && <p className="text-md text-red-500">{errors.university}</p>}
           </div>
 
           <div className="space-y-2">
@@ -81,7 +81,7 @@ export default function EducationalDataForm({ onNext, onBack, updateFormData, fo
               className={`h-12 ${errors.state ? "border-red-500" : ""}`}
               placeholder="Digite o estado"
             />
-            {errors.state && <p className="text-sm text-red-500">{errors.state}</p>}
+            {errors.state && <p className="text-md text-red-500">{errors.state}</p>}
           </div>
 
           <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function EducationalDataForm({ onNext, onBack, updateFormData, fo
               className={`h-12 ${errors.city ? "border-red-500" : ""}`}
               placeholder="Digite a cidade"
             />
-            {errors.city && <p className="text-sm text-red-500">{errors.city}</p>}
+            {errors.city && <p className="text-md text-red-500">{errors.city}</p>}
           </div>
 
           <div className="flex justify-between pt-4">

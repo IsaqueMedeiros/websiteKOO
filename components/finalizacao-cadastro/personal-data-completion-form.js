@@ -129,7 +129,7 @@ export default function PersonalDataCompletionForm({ onNext, updateFormData, for
               placeholder="Digite seu nome completo"
               maxLength={100}
             />
-            {errors.fullName && <p className="text-sm text-red-500">{errors.fullName}</p>}
+            {errors.fullName && <p className="text-md text-red-500">{errors.fullName}</p>}
           </div>
 
           <div className="space-y-2">
@@ -149,7 +149,7 @@ export default function PersonalDataCompletionForm({ onNext, updateFormData, for
                 {data.cpf.length}/14
               </span>
             </div>
-            {errors.cpf && <p className="text-sm text-red-500">{errors.cpf}</p>}
+            {errors.cpf && <p className="text-md text-red-500">{errors.cpf}</p>}
           </div>
 
           <div className="space-y-2">
@@ -164,7 +164,7 @@ export default function PersonalDataCompletionForm({ onNext, updateFormData, for
               className={`h-12 ${errors.birthDate ? "border-red-500" : ""}`}
               placeholder="DD/MM/AAAA"
             />
-            {errors.birthDate && <p className="text-sm text-red-500">{errors.birthDate}</p>}
+            {errors.birthDate && <p className="text-md text-red-500">{errors.birthDate}</p>}
           </div>
 
           <div className="space-y-2">
@@ -179,8 +179,8 @@ export default function PersonalDataCompletionForm({ onNext, updateFormData, for
                   <Upload className="h-4 w-4" />
                   Fazer upload de arquivos
                 </label>
-                {uploadedFile && <p className="text-sm text-gray-600">{uploadedFile.name}</p>}
-                {errors.document && <p className="text-sm text-red-500">{errors.document}</p>}
+                {uploadedFile && <p className="text-md text-gray-600">{uploadedFile.name}</p>}
+                {errors.document && <p className="text-md text-red-500">{errors.document}</p>}
               </div>
             </div>
           </div>

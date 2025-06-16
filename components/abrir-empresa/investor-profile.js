@@ -169,7 +169,7 @@ export default function InvestorProfileForm({ onNext, updateFormData, formData }
           <Label className="text-lg font-semibold text-primary">{question.id}. {question.text}</Label>
           <div className="space-y-2">
             {question.options.map((option, idx) => (
-              <label key={idx} className="flex items-center space-x-3 text-sm">
+              <label key={idx} className="flex items-center space-x-3 text-md">
                 <input
                   type="radio"
                   name={`question-${question.id}`}
@@ -183,7 +183,7 @@ export default function InvestorProfileForm({ onNext, updateFormData, formData }
             ))}
           </div>
           {errors.includes(question.id) && (
-            <p className="text-sm text-red-500">Por favor, responda esta pergunta.</p>
+            <p className="text-md text-red-500">Por favor, responda esta pergunta.</p>
           )}
         </div>
       ))}

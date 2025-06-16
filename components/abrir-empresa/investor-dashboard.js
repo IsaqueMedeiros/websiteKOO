@@ -85,7 +85,7 @@
         <section className="bg-white p-6 rounded-lg border space-y-4 shadow-sm">
           <h2 className="text-xl font-semibold text-primary">Suas recomendações de investimento</h2>
           <p className="text-gray-600">Em breve, você verá aqui as melhores oportunidades baseadas no seu perfil: <strong>{investorProfile}</strong>.</p>
-          <div className="text-sm italic text-gray-400">
+          <div className="text-md italic text-gray-400">
             * Essa seção será personalizada para você automaticamente ao acessar sua área de perfil no sistema.
           </div>
         </section>

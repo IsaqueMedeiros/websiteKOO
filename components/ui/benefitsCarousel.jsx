@@ -42,7 +42,7 @@ const benefits = [
 ];
 
 const BenefitCard = memo(({ icon, title, description }) => (
-  <article className="bg-white rounded-[16px] px-5 py-5 flex flex-col items-start gap-2 shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] min-h-[150px] max-w-[340px] w-full mx-auto">
+  <article className="bg-white rounded-[16px] px-5 py-5 flex flex-col items-start gap-2 shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] min-h-[125px] max-w-[340px] w-full mx-auto">
     <div className="flex items-center gap-3">
       <div className="flex items-center justify-center w-9 h-9 bg-fuchsia-100 rounded-full">
         {icon}

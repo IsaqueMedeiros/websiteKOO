@@ -95,9 +95,9 @@ export default function UserInvestmentsWallet() {
                 <h3 className="text-xl font-bold text-brandKoocher-deepPurple">{item.nome}</h3>
                 <Banknote className="w-5 h-5 text-emerald-600" />
               </div>
-              <p className="text-sm text-gray-600">Tipo: <span className="text-gray-800 font-medium">{item.tipo}</span></p>
+              <p className="text-md text-gray-600">Tipo: <span className="text-gray-800 font-medium">{item.tipo}</span></p>
               <Progress value={item.percentual} className="h-2 rounded-full" />
-              <p className="text-sm font-semibold text-gray-700">{item.percentual}% sugerido</p>
+              <p className="text-md font-semibold text-gray-700">{item.percentual}% sugerido</p>
             </Card>
           ))}
         </div>
@@ -125,7 +125,7 @@ export default function UserInvestmentsWallet() {
         {showForm && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white border border-brandKoocher-vividPurple p-6 rounded-2xl shadow-xl">
             <div>
-              <Label className="text-sm font-medium text-gray-700">Nome do Ativo</Label>
+              <Label className="text-md font-medium text-gray-700">Nome do Ativo</Label>
               <input
                 type="text"
                 value={newInvestment.nome}
@@ -134,7 +134,7 @@ export default function UserInvestmentsWallet() {
               />
             </div>
             <div>
-              <Label className="text-sm font-medium text-gray-700">Tipo</Label>
+              <Label className="text-md font-medium text-gray-700">Tipo</Label>
               <input
                 type="text"
                 value={newInvestment.tipo}
@@ -143,7 +143,7 @@ export default function UserInvestmentsWallet() {
               />
             </div>
             <div>
-              <Label className="text-sm font-medium text-gray-700">Percentual (%)</Label>
+              <Label className="text-md font-medium text-gray-700">Percentual (%)</Label>
               <input
                 type="number"
                 value={newInvestment.percentual}
@@ -166,14 +166,14 @@ export default function UserInvestmentsWallet() {
                 <h3 className="text-xl font-bold text-brandKoocher-deepPurple">{item.nome}</h3>
                 <Banknote className="w-5 h-5 text-emerald-600" />
               </div>
-              <p className="text-sm text-gray-600">Tipo: <span className="text-gray-800 font-medium">{item.tipo}</span></p>
+              <p className="text-md text-gray-600">Tipo: <span className="text-gray-800 font-medium">{item.tipo}</span></p>
               <Progress value={item.percentual} className="h-2 rounded-full" />
-              <p className="text-sm font-semibold text-gray-700">{item.percentual}% da carteira</p>
+              <p className="text-md font-semibold text-gray-700">{item.percentual}% da carteira</p>
             </Card>
           ))}
         </div>
 
-        <p className="text-right text-sm text-gray-500 mt-2">Total da Carteira: {totalPercentual}%</p>
+        <p className="text-right text-md text-gray-500 mt-2">Total da Carteira: {totalPercentual}%</p>
       </section>
 
       <section className="space-y-8">
@@ -191,7 +191,7 @@ export default function UserInvestmentsWallet() {
                 <Info className="w-5 h-5 text-brandKoocher-vividPurple mt-1" />
                 <div>
                   <p className="font-semibold text-gray-800">{q.pergunta}</p>
-                  <p className="text-sm text-gray-700">Resposta: <span className="font-medium text-brandKoocher-vividPurple">{q.resposta}</span></p>
+                  <p className="text-md text-gray-700">Resposta: <span className="font-medium text-brandKoocher-vividPurple">{q.resposta}</span></p>
                   <p className="text-xs text-gray-500 italic">{q.justificativa}</p>
                 </div>
               </div>

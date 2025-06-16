@@ -77,12 +77,12 @@ export default function InvestorProfileResult({ formData, onRestart, onNext, upd
 
       <div className="bg-gray-100 p-6 rounded-lg shadow-md text-left space-y-4">
         <h2 className="text-xl font-semibold">Por que você recebeu esse perfil?</h2>
-        <ul className="list-disc list-inside text-sm text-gray-700">
+        <ul className="list-disc list-inside text-md text-gray-700">
           {reasons.map((r, i) => <li key={i}>{r}</li>)}
         </ul>
       </div>
 
-      <p className="text-sm text-gray-500">Pontuação total: <strong>{score} / 40</strong></p>
+      <p className="text-md text-gray-500">Pontuação total: <strong>{score} / 40</strong></p>
 
       <div className="flex justify-center gap-4 mt-6">
         <Button

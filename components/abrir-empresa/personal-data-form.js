@@ -86,7 +86,7 @@ export default function StudentDataForm({ onNext, updateFormData, formData }) {
 
       <div className="space-y-8 w-full">
         <div>
-          <p className="text-sm text-gray-600">Preencha os dados abaixo com atenção.</p>
+          <p className="text-md text-gray-600">Preencha os dados abaixo com atenção.</p>
           <h2 className="text-2xl font-bold text-[#1D1929] mt-2">Informações financeiras</h2>
         </div>
 
@@ -110,7 +110,7 @@ export default function StudentDataForm({ onNext, updateFormData, formData }) {
                 placeholder={field.placeholder}
                 className={`h-12 ${errors[field.id] ? "border-red-500" : ""}`}
               />
-              {errors[field.id] && <p className="text-sm text-red-500">{errors[field.id]}</p>}
+              {errors[field.id] && <p className="text-md text-red-500">{errors[field.id]}</p>}
             </div>
           ))}
 

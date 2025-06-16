@@ -156,80 +156,103 @@ export default function PricingPlansSection() {
           <div className="w-24 h-1 bg-fuchsia-600 mx-auto mt-4"></div>
         </div>
 
-        {/* Container with controlled height for scrolling */}
-        <div className="relative">
-          {/* Sticky Plan Headers */}
-          <div className="sticky top-0 z-30 bg-white border-b border-gray-200 pb-4 mb-4">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-              {/* Empty space for features column on desktop */}
-              <div className="hidden lg:block lg:col-span-1">
-                <div className="h-full flex items-end pb-4">
-                  <span className="text-lg font-semibold text-gray-800">
-                    Recursos inclusos
+        {/* Plans Cards - Full display initially */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
+          {/* Empty space for features column on desktop */}
+          <div className="hidden lg:block"></div>
+          
+          {/* Plan Cards */}
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className={`relative bg-gray-50 rounded-2xl p-6 text-center transition-all duration-300 ${
+                plan.popular ? 'ring-2 ring-fuchsia-500 bg-gradient-to-b from-fuchsia-50 to-white transform scale-105' : ''
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-fuchsia-600 text-white px-4 py-1 rounded-full text-md font-semibold shadow-lg">
+                    Mais Popular
                   </span>
                 </div>
+              )}
+              
+              <h3 className="text-xl font-bold text-[#250048] mb-4">
+                {plan.name}
+              </h3>
+              
+              <div className="mb-4">
+                <span className="text-md text-gray-600">R$</span>
+                <span className="text-4xl font-bold text-fuchsia-600 ml-1">
+                  {plan.monthlyPrice}
+                </span>
+                <span className="text-md text-gray-600 ml-1">/mês</span>
               </div>
               
-              {/* Plan Headers */}
-              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="text-md text-gray-500 mb-6">
+                ou R$ {plan.yearlyPrice.toFixed(2)} anual
+              </div>
+              
+              <button
+                className={`w-full py-3 px-6 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                  plan.popular 
+                    ? 'bg-fuchsia-600 hover:bg-fuchsia-700 shadow-lg' 
+                    : 'bg-fuchsia-500 hover:bg-fuchsia-600'
+                }`}
+              >
+                Assinar
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Comparison Table */}
+        <div className="relative">
+          {/* Sticky Simplified Header for Scrolling */}
+          <div className="sticky top-0 z-30 bg-white shadow-md border-b border-gray-200 py-4 mb-6 rounded-lg">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 px-4">
+              {/* Features Column Header */}
+              <div className="hidden lg:flex items-center">
+                <span className="text-lg font-bold text-gray-800">
+                  Recursos inclusos
+                </span>
+              </div>
+              
+              {/* Simplified Plan Headers */}
+              <div className="lg:col-span-3 grid grid-cols-3 gap-4">
                 {plans.map((plan, index) => (
                   <div
                     key={index}
-                    className={`relative bg-gray-50 rounded-2xl p-6 text-center transition-all duration-300 ${
-                      plan.popular ? 'ring-2 ring-fuchsia-500 bg-gradient-to-b from-fuchsia-50 to-white transform scale-105' : ''
+                    className={`text-center py-3 px-2 rounded-xl transition-all duration-300 ${
+                      plan.popular 
+                        ? 'bg-fuchsia-600 text-white shadow-lg' 
+                        : 'bg-gray-100 text-gray-800'
                     }`}
                   >
-                    {plan.popular && (
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span className="bg-fuchsia-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                          Mais Popular
-                        </span>
-                      </div>
-                    )}
-                    
-                    <h3 className="text-xl font-bold text-[#250048] mb-4">
+                    <h4 className="font-bold text-lg mb-1">
                       {plan.name}
-                    </h3>
-                    
-                    <div className="mb-4">
-                      <span className="text-sm text-gray-600">R$</span>
-                      <span className="text-4xl font-bold text-fuchsia-600 ml-1">
-                        {plan.monthlyPrice}
-                      </span>
-                      <span className="text-sm text-gray-600 ml-1">/mês</span>
+                    </h4>
+                    <div className={`text-md font-semibold ${plan.popular ? 'text-white' : 'text-fuchsia-600'}`}>
+                      R$ {plan.monthlyPrice}/mês
                     </div>
-                    
-                    <div className="text-sm text-gray-500 mb-6">
-                      ou R$ {plan.yearlyPrice.toFixed(2)} anual
-                    </div>
-                    
-                    <button
-                      className={`w-full py-3 px-6 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${
-                        plan.popular 
-                          ? 'bg-fuchsia-600 hover:bg-fuchsia-700 shadow-lg' 
-                          : 'bg-fuchsia-500 hover:bg-fuchsia-600'
-                      }`}
-                    >
-                      Assinar
-                    </button>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Features Comparison - Scrollable Area */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-100">
+          {/* Features Comparison Table */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`grid grid-cols-1 lg:grid-cols-4 gap-4 py-6 px-4 border-b border-gray-100 last:border-b-0 ${
+                className={`grid grid-cols-1 lg:grid-cols-4 gap-4 py-6 px-6 border-b border-gray-100 last:border-b-0 ${
                   index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
                 } hover:bg-fuchsia-50 transition-all duration-200`}
               >
                 {/* Feature Name */}
                 <div className="lg:col-span-1 flex items-center">
-                  <span className="text-sm md:text-base font-medium text-gray-800 leading-relaxed">
+                  <span className="text-md md:text-base font-medium text-gray-800 leading-relaxed">
                     {feature.name}
                   </span>
                 </div>
@@ -239,16 +262,16 @@ export default function PricingPlansSection() {
                   {/* Basic Plan */}
                   <div className="flex items-center justify-center">
                     {feature.isText ? (
-                      <span className="text-sm font-semibold text-gray-600 px-2 py-1 bg-gray-100 rounded-md">
+                      <span className="text-xs font-bold text-gray-700 px-3 py-2 bg-gray-200 rounded-full">
                         {feature.basic}
                       </span>
                     ) : feature.basic ? (
-                      <div className="w-10 h-10 bg-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
-                        <Check className="w-6 h-6 text-white" />
+                      <div className="w-8 h-8 bg-gradient-to-r from-fuchsia-500 to-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
+                        <Check className="w-5 h-5 text-white" />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                        <X className="w-6 h-6 text-red-500" />
+                      <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                        <X className="w-5 h-5 text-red-500" />
                       </div>
                     )}
                   </div>
@@ -256,16 +279,16 @@ export default function PricingPlansSection() {
                   {/* Premium Plan */}
                   <div className="flex items-center justify-center">
                     {feature.isText ? (
-                      <span className="text-sm font-semibold text-gray-600 px-2 py-1 bg-gray-100 rounded-md">
+                      <span className="text-xs font-bold text-gray-700 px-3 py-2 bg-gray-200 rounded-full">
                         {feature.premium}
                       </span>
                     ) : feature.premium ? (
-                      <div className="w-10 h-10 bg-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
-                        <Check className="w-6 h-6 text-white" />
+                      <div className="w-8 h-8 bg-gradient-to-r from-fuchsia-500 to-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
+                        <Check className="w-5 h-5 text-white" />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                        <X className="w-6 h-6 text-red-500" />
+                      <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                        <X className="w-5 h-5 text-red-500" />
                       </div>
                     )}
                   </div>
@@ -273,16 +296,16 @@ export default function PricingPlansSection() {
                   {/* Exclusive Plan */}
                   <div className="flex items-center justify-center">
                     {feature.isText ? (
-                      <span className="text-sm font-semibold text-gray-600 px-2 py-1 bg-gray-100 rounded-md">
+                      <span className="text-xs font-bold text-gray-700 px-3 py-2 bg-gray-200 rounded-full">
                         {feature.exclusive}
                       </span>
                     ) : feature.exclusive ? (
-                      <div className="w-10 h-10 bg-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
-                        <Check className="w-6 h-6 text-white" />
+                      <div className="w-8 h-8 bg-gradient-to-r from-fuchsia-500 to-fuchsia-600 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-200">
+                        <Check className="w-5 h-5 text-white" />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                        <X className="w-6 h-6 text-red-500" />
+                      <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                        <X className="w-5 h-5 text-red-500" />
                       </div>
                     )}
                   </div>

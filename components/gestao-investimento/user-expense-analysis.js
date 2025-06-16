@@ -50,8 +50,8 @@ export default function UserExpenseAnalysis() {
         {/* Gráfico de Pizza */}
         <Card className="p-8 space-y-6 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition">
           <h2 className="text-2xl font-bold text-brandKoocher-deepPurple">Resumo do Mês Atual</h2>
-          <p className="text-sm text-gray-600">Total fixo: <strong className="text-brandKoocher-vividPurple">R$ {totalFixos.toFixed(2)}</strong></p>
-          <p className="text-sm text-gray-600">Total esporádico: <strong className="text-brandKoocher-vividPurple">R$ {totalEsporadicos.toFixed(2)}</strong></p>
+          <p className="text-md text-gray-600">Total fixo: <strong className="text-brandKoocher-vividPurple">R$ {totalFixos.toFixed(2)}</strong></p>
+          <p className="text-md text-gray-600">Total esporádico: <strong className="text-brandKoocher-vividPurple">R$ {totalEsporadicos.toFixed(2)}</strong></p>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -76,7 +76,7 @@ export default function UserExpenseAnalysis() {
         <Card className="p-8 bg-white border border-gray-200 rounded-2xl shadow-md overflow-auto hover:shadow-xl transition">
           <h2 className="text-2xl font-bold text-brandKoocher-deepPurple mb-4">Todos os Gastos Registrados</h2>
           <div className="overflow-x-auto">
-            <table className="min-w-full text-sm text-gray-700 border border-gray-100 rounded-md overflow-hidden">
+            <table className="min-w-full text-md text-gray-700 border border-gray-100 rounded-md overflow-hidden">
               <thead className="bg-gray-50 text-left text-xs font-semibold uppercase text-gray-500">
                 <tr>
                   <th className="px-4 py-3">Categoria</th>

@@ -20,11 +20,11 @@ export default function FinalizationHeader({ step }) {
 
         <div className="w-full flex items-center gap-2">
           <Progress value={progress} className="w-full h-2" />
-          <span className="text-sm text-gray-500">{step}/6</span>
+          <span className="text-md text-gray-500">{step}/6</span>
         </div>
 
         <div className="py-2 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 text-md">
             <span className="text-gray-500">{step}/6</span>
             <span className="text-gray-300">-</span>
             <span className="text-gray-900">{steps[step - 1]}</span>

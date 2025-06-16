@@ -80,7 +80,7 @@ export default function IdealSolutionCarousel() {
                     </h3>
                     <a
                       href="#"
-                      className="text-sm text-fuchsia-600 font-medium hover:underline mt-auto"
+                      className="text-md text-fuchsia-600 font-medium hover:underline mt-auto"
                     >
                       Conferir
                     </a>
