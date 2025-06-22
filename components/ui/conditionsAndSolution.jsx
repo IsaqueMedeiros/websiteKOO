@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import { ChevronLeft, ChevronRight, CreditCard, User, Smartphone, Users } from 'lucide-react';
 

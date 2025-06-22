@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { DollarSign, Building2, FileText, ReceiptText, Share2 } from 'lucide-react';
 
