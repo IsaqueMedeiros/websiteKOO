@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Clock, Mail, Phone, Link } from 'lucide-react';
+import Image from 'next/image';
 
 const KoocherContactForm = () => {
   const [formData, setFormData] = useState({
@@ -35,35 +36,41 @@ const KoocherContactForm = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-purple-800 w-full py-20 px-6 text-white">
+      <section className="bg-gradient-to-r from-[#29003F] to-[#B000FF] w-full py-20 px-6 text-white">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between">
           {/* Texto à esquerda */}
           <div className="max-w-2xl text-center lg:text-left mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Como podemos te ajudar?
             </h1>
-            <p className="text-xl md:text-2xl text-yellow-300 font-semibold mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#F9FFAB] font-semibold mb-8 leading-relaxed">
               Somos igual netflix, planos de<br />
               assinatura mensal sem fidelidade
             </p>
 
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-4 rounded-full inline-flex items-center text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              <Link className="mr-3" size={20} />
+            <button className="bg-[#E4FE2A] hover:bg-[#F9FFAB] text-gray-900 font-bold px-8 py-4 rounded-full inline-flex items-center text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <Image
+                              src="/icon-purple.webp"
+                              alt="logo koocher"
+                              width={35}
+                              height={35}
+                              className="relative z-10 mr-8"
+                            />{" "}
               <span>Venha ser KOOCHER!</span>
             </button>
           </div>
 
           {/* Ilustração à direita */}
           <div className="relative">
-            <div className="w-80 h-80 bg-yellow-400 rounded-full flex items-center justify-center shadow-2xl">
+            <div className="w-80 h-80 bg-[#E4FE2A] rounded-full flex items-center justify-center shadow-2xl">
               <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center">
                 <div className="text-6xl">👨‍⚕️</div>
               </div>
             </div>
             {/* Elementos decorativos */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-300 rounded-full animate-bounce"></div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-yellow-300 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
-            <div className="absolute top-1/2 -left-8 w-4 h-4 bg-yellow-300 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+            <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#E4FE2A] rounded-full animate-bounce"></div>
+            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#E4FE2A] rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
+            <div className="absolute top-1/2 -left-8 w-4 h-4 bg-[#E4FE2A] rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
           </div>
         </div>
       </section>
@@ -76,9 +83,9 @@ const KoocherContactForm = () => {
               {/* Left side - Contact Form */}
               <div className="xl:w-1/2 p-8 lg:p-12">
                 <div className="text-center mb-10">
-                  <h2 className="text-4xl font-bold text-purple-600 mb-4">KOOCHER</h2>
+                  <h2 className="text-4xl font-bold text-[#29003F] mb-4">KOOCHER</h2>
                   <p className="text-xl text-gray-700 font-medium">Entre em contato com a koocher</p>
-                  <div className="w-20 h-1 bg-purple-600 mx-auto mt-4 rounded-full"></div>
+                  <div className="w-20 h-1 bg-[#29003F] mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 <div className="space-y-8">
@@ -148,7 +155,7 @@ const KoocherContactForm = () => {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                    className="w-full bg-gradient-to-r from-[#29003F] to-purple-700 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
                   >
                     Quero contato
                   </button>
@@ -161,7 +168,7 @@ const KoocherContactForm = () => {
                 <div className="p-8 lg:p-12 space-y-8">
                   <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="p-3 bg-purple-100 rounded-full">
-                      <MapPin className="text-purple-600" size={24} />
+                      <MapPin className="text-[#29003F]" size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-800 mb-2 text-lg">Endereço</h3>
@@ -175,7 +182,7 @@ const KoocherContactForm = () => {
 
                   <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="p-3 bg-purple-100 rounded-full">
-                      <Clock className="text-purple-600" size={24} />
+                      <Clock className="text-[#29003F]" size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-800 mb-2 text-lg">Atendimento</h3>
@@ -185,7 +192,7 @@ const KoocherContactForm = () => {
 
                   <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="p-3 bg-purple-100 rounded-full">
-                      <Mail className="text-purple-600" size={24} />
+                      <Mail className="text-[#29003F]" size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-800 mb-2 text-lg">Email</h3>
@@ -195,7 +202,7 @@ const KoocherContactForm = () => {
 
                   <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="p-3 bg-purple-100 rounded-full">
-                      <Phone className="text-purple-600" size={24} />
+                      <Phone className="text-[#29003F]" size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-800 mb-2 text-lg">Contato</h3>

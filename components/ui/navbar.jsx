@@ -87,7 +87,7 @@ const Navbar = () => {
                   alt="Contadores"
                   width={350}
                   height={350}
-                  className="w-auto h-10 sm:h-12 md:h-14 lg:h-16 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] cursor-pointer"
+                  className="w-46 sm:h-12 md:h-14 lg:h-16 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] cursor-pointer"
                 />
               </Link>
             </div>
