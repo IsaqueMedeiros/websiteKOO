@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 import { ChevronLeft, ChevronRight, CreditCard, User, Smartphone, Users } from 'lucide-react';
+import Link from 'next/link';
 
 // Mock do Swiper para demonstração
 const Swiper = ({ children, ...props }) => (
@@ -161,11 +162,14 @@ export default function ConditionsAndSolution() {
                   ))}
                 </div>
 
-                <div className="mt-24 pt-6 border-t border-white/20">
-                  <button className="w-full sm:w-auto bg-white text-purple-700 hover:bg-gray-50 font-semibold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group-hover:scale-105">
-                    Começar agora
+                <div className="mt-24 pt-6 border-t border-white/20"> 
+                  <Link
+                href="/assesoria-koocher"
+                className="w-full sm:w-auto bg-white text-purple-700 hover:bg-gray-50 font-semibold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group-hover:scale-105"
+              >
+                Começar agora
                     <ChevronRight className="w-5 h-5" />
-                  </button>
+              </Link>
                 </div>
               </div>
             </div>

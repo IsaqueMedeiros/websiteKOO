@@ -1,6 +1,7 @@
-"use client"
-import React from 'react';
-import { Instagram, Facebook, Linkedin, Youtube } from 'lucide-react';
+"use client";
+import React from "react";
+import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -10,17 +11,28 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
           {/* Left side - Logo and CTA */}
           <div className="mb-8 lg:mb-0">
-            <div className="text-3xl font-bold text-purple-600 mb-6">
-              K<span className="bg-purple-600 text-white px-2 py-1 rounded-full text-md">🏠</span>CHER
+            <div className="text-3xl font-bold text-purple-600 mb-16">
+              <Image
+                src="/logo.webp"
+                alt="logo koocher"
+                width={150}
+                height={150}
+                className="relative z-10 object-contain translate-y-8"
+              />
             </div>
             <p className="text-gray-600 mb-2">
               Quer uma contabilidade sem chatice?
             </p>
-            <p className="text-gray-600 mb-6">
-              Fale agora via WhatsApp!
-            </p>
-            <button className="bg-lime-400 hover:bg-lime-500 text-black font-semibold py-3 px-6 rounded-full transition-colors duration-200 flex items-center gap-2">
-              📱 Vem ser Koocher!
+            <p className="text-gray-600 mb-6">Fale agora via WhatsApp!</p>
+            <button className="bg-[#E4FE2A] hover:bg-[#F9FFAB] text-black font-semibold py-2 px-12 rounded-full transition-colors duration-200 flex items-around gap-2">
+              <Image
+                src="/icon-purple.webp"
+                alt="logo koocher"
+                width={20}
+                height={20}
+                className="relative z-10"
+              />{" "}
+              <p>Vem ser Koocher!</p>
             </button>
           </div>
 
@@ -35,11 +47,13 @@ const Footer = () => {
                 Belo Horizonte – MG, 30494-280
               </p>
             </div>
-            
+
             <div>
               <h3 className="font-bold text-gray-900 mb-4">Contatos</h3>
               <p className="text-purple-600 text-md mb-2">📞 (34) 99835-0035</p>
-              <p className="text-purple-600 text-md">✉️ contato@koocher.com.br</p>
+              <p className="text-purple-600 text-md">
+                ✉️ contato@koocher.com.br
+              </p>
             </div>
           </div>
         </div>
@@ -54,17 +68,26 @@ const Footer = () => {
             <h3 className="font-bold text-gray-900 mb-4">Soluções</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Para Plantonistas
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Para Residentes
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Para Especialistas
                 </a>
               </li>
@@ -76,17 +99,26 @@ const Footer = () => {
             <h3 className="font-bold text-gray-900 mb-4">A Koocher</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Quem Somos
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Soluções
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Contato
                 </a>
               </li>
@@ -98,17 +130,26 @@ const Footer = () => {
             <h3 className="font-bold text-gray-900 mb-4">Links Rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="text-purple-600 hover:text-purple-700 text-md transition-colors">
+                <a
+                  href="#"
+                  className="text-purple-600 hover:text-purple-700 text-md transition-colors"
+                >
                   Área do Cliente
                 </a>
               </li>
@@ -117,12 +158,12 @@ const Footer = () => {
 
           {/* Contact Form */}
           <div>
-            <h3 className="font-bold text-gray-900 mb-4">Solicite nosso contato</h3>
+            <h3 className="font-bold text-gray-900 mb-4">
+              Solicite nosso contato
+            </h3>
             <div className="space-y-3">
               <div>
-                <label className="block text-xs text-gray-600 mb-1">
-                  Nome
-                </label>
+                <label className="block text-xs text-gray-600 mb-1">Nome</label>
                 <input
                   type="text"
                   placeholder="Como você gostaria de ser chamado(a)"
@@ -142,7 +183,7 @@ const Footer = () => {
             <p className="text-gray-600 text-md mb-4 md:mb-0">
               © 2025 Koocher | Contabilidade Médica
             </p>
-            
+
             {/* Social Media Icons */}
             <div className="flex space-x-3">
               <a

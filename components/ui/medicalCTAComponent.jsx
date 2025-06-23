@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import { DollarSign, Building2, FileText, ReceiptText, Share2 } from 'lucide-react';
+import Link from "next/link";
 
 export default function MedicalCTAComponent() {
   return (
@@ -48,10 +49,13 @@ export default function MedicalCTAComponent() {
                 </li>
               </ul>
               
-              <button className="bg-[#e6ff00] text-[#250048] px-6 py-3 rounded-full font-bold text-md hover:bg-[#d9ff00] transition-colors duration-200 flex items-center gap-2">
+               <Link
+                href="/planos"
+                className="bg-[#e6ff00] text-[#250048] px-6 py-3 rounded-full font-bold text-md hover:bg-[#d9ff00] transition-colors duration-200 flex items-center gap-2"
+              >
                 <span className="text-pink-500 font-bold">📱</span>
                 Conheça nossos planos
-              </button>
+              </Link>
             </div>
             
             {/* Lado direito com imagem e elemento gráfico */}
