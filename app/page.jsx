@@ -22,7 +22,7 @@ export default function BaseSelectionScreen() {
   return (
     <>
     <Navbar/>
-      <section className="bg-[#f4f0ff] w-full">
+      <section className="overflow-x-hidden">
         <div className="max-w-fit mx-auto px-6 lg:px-8 pt-20 pb-8 grid grid-cols-1 md:grid-cols-2 items-center relative">
           {/* Texto */}
           <div className="z-10 space-y-7 text-center md:text-left">
