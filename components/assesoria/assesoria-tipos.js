@@ -178,19 +178,6 @@ const KoocherSelector = () => {
                 <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/5 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
               </div>
 
-              {/* Floating badge */}
-              <div className="absolute top-8 right-8 z-20">
-                <div className="bg-white/10 backdrop-blur-lg shadow-text text-[#F2F2F2] px-6 py-3 rounded-full border border-white/20 shadow-lg">
-                  <span className="font-bold text-sm">
-                    KOOCHER PARA{" "}
-                    {options
-                      .find((opt) => opt.id === selectedOption)
-                      ?.label.toUpperCase()
-                      .replace("PARA ", "")}
-                  </span>
-                </div>
-              </div>
-
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 p-8 md:p-16 items-center">
                 {/* Enhanced Content Side */}
                 <div className="space-y-10">

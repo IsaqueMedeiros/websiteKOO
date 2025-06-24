@@ -1,19 +1,12 @@
 import Image from "next/image";
-import {
-  BadgeCheck,
-  DollarSign,
-  Building2,
-  FileText,
-  ReceiptText,
-  Share2,
-} from "lucide-react";
+import {BadgeCheck} from "lucide-react";
 import BenefitsCarousel from "@/components/ui/benefitsCarousel";
 import IdealSolutionCarousel from "@/components/ui/idealSolutionCarousel";
 import ConditionsAndSolution from "@/components/ui/conditionsAndSolution";
 import MedicalJourneyCarousel from "@/components/ui/journeyStepByStep";
 import PricingPlansSection from "@/components/ui/plansInfo";
 import VideoSlider from "@/components/ui/videoSlider";
-import FAQ from "@/components/ui/faq";
+import FaqKoocher from "@/components/faq/faq";
 import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 import MedicalCTAComponent from "@/components/ui/medicalCTAComponent";
@@ -54,7 +47,7 @@ export default function BaseSelectionScreen() {
           </div>
 
           {/* Imagem */}
-          <div className="relative mt-8 sm:mt-12 md:mt-0 flex justify-center md:justify-end">
+          <div className="relative mt-8 sm:mt-12 md:mt-20 flex justify-center md:justify-end">
             <div className="absolute -z-10 right-0 top-8 w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] bg-fuchsia-600 rounded-full hidden md:block" />
             <div className="absolute -z-10 right-[40px] sm:right-[60px] top-10 hidden md:block">
               <div className="space-y-2 sm:space-y-3">
@@ -357,7 +350,7 @@ export default function BaseSelectionScreen() {
       <VideoSlider />
 
       {/* seção DÚVIDAS */}
-      <FAQ />
+      <FaqKoocher />
       {/* RODAPÉ */}
       <Footer />
     </>

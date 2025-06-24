@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
+import {BadgeCheck} from "lucide-react";
 
 const VemSerKoocher = () => {
   const [formData, setFormData] = useState({
@@ -31,11 +33,11 @@ const VemSerKoocher = () => {
   return (
     <div className="bg-gray-50">
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-purple-900 to-purple-700 py-16 lg:py-24">
+      {/* <div className=" py-16 lg:py-24">
         <div className="container mx-auto px-8 lg:px-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             {/* Left Content */}
-            <div className="lg:w-1/2 text-white">
+            {/* <div className="lg:w-1/2 text-white">
               <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
                 #VemSerKOOCHER
               </h1>
@@ -46,34 +48,54 @@ const VemSerKoocher = () => {
                 <br />
                 participe do nosso processo seletivo.
               </p>
-            </div>
+            </div> */}
 
-            {/* Right Image */}
-            <div className="lg:w-1/2 flex justify-center">
-              <div className="relative">
-                <div className="w-80 h-64 bg-purple-600 rounded-2xl flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    {/* Person 1 */}
-                    <div className="text-center">
-                      <div className="w-24 h-32 bg-gray-300 rounded-lg mb-2 flex items-end justify-center pb-2">
-                        <span className="text-xs text-gray-600">Koocher</span>
-                      </div>
-                      <div className="text-white text-lg">👍</div>
-                    </div>
-                    {/* Person 2 */}
-                    <div className="text-center">
-                      <div className="w-24 h-32 bg-gray-400 rounded-lg mb-2 flex items-end justify-center pb-2">
-                        <span className="text-xs text-gray-600">Koocher</span>
-                      </div>
-                      <div className="text-white text-lg">👍</div>
-                    </div>
-                  </div>
-                </div>
+  
+
+       <section className="overflow-hidden bg-brandKoocher-vividPurple">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-8 grid grid-cols-1 md:grid-cols-2 items-center relative">
+          {/* Texto */}
+          <div className="z-10 space-y-6 sm:space-y-7 text-center md:text-left">
+            <p className="text-sm sm:text-base font-semibold text-[#F2F2F2]">
+              Contabilidade <span className="text-brandKoocher-neonLime">Médica</span>
+            </p>
+            <h1 className="text-2xl sm:text-3xl md:text-[3.2rem] leading-tight sm:leading-[1.2] md:leading-[4rem] font-extrabold text-brandKoocher-neonLime">
+              #VemSerKOOCHER
+            </h1>
+          <p className="text-xl lg:text-2xl text-yellow-300 leading-relaxed">
+                Estamos sempre em busca de novos 
+                <br />
+                talentos, envie o seu currículo e 
+                <br />
+                participe do nosso processo seletivo.
+              </p>
+          </div>
+
+          {/* Imagem */}
+          <div className="relative mt-8 sm:mt-12 md:mt-0 flex justify-center md:justify-end">
+            <div className="absolute -z-10 right-0 top-8 w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] bg-fuchsia-600 rounded-full hidden md:block" />
+            <div className="absolute -z-10 right-[40px] sm:right-[60px] top-10 hidden md:block">
+              <div className="space-y-2 sm:space-y-3">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-[150px] sm:w-[200px] h-[10px] sm:h-[14px] bg-white rounded-full"
+                  />
+                ))}
               </div>
+            </div>
+            <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-none">
+              <Image
+                src="/bannerfernandoGui.webp"
+                alt="Contadores"
+                width={1000}
+                height={1000}
+                className="relative z-10 object-contain w-full h-auto translate-y-4 sm:translate-y-8"
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Form Section */}
       <div className="py-16 lg:py-24">
@@ -82,7 +104,7 @@ const VemSerKoocher = () => {
             {/* Left Content */}
             <div className="lg:w-1/2">
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Venha revolucionar a <span className="text-purple-600">contabilidade médica com a gente.</span>
+                Venha revolucionar a <span className="text-brandKoocher-vividPurple">contabilidade médica com a gente.</span>
               </h2>
               
               <p className="text-gray-600 text-lg">
@@ -161,7 +183,7 @@ const VemSerKoocher = () => {
                 <div className="pt-4">
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+                    className="w-full bg-gradient-to-r from-brandKoocher-deepPurple to-brandKoocher-vividPurple text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
                   >
                     Cadastrar Currículo
                   </button>

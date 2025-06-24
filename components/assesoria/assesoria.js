@@ -60,10 +60,10 @@ const AssessoriaKocher = () => {
               
               <div className="flex-shrink-0">
                 <div className="relative">
-                  <div className="w-80 h-96 rounded-2xl overflow-hidden bg-transparent transform hover:scale-105 transition-transform duration-500">
+                  <div className="w-80 h-96 bg-brandKoocher-neonLime rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                     <Image 
                       src="/solucoes/assesoria-colaboradora.webp"
-                      alt="Profissional de gestão bancária"
+                      alt="Assessor de investimentos"
                       width={550}
                       height={800}
                       className="w-full h-full object-cover"
@@ -188,7 +188,7 @@ const AssessoriaKocher = () => {
               
               <div className="flex-shrink-0">
                 <div className="relative">
-                  <div className="w-80 h-96 rounded-2xl overflow-hidden bg-transparent transform hover:scale-105 transition-transform duration-500">
+                  <div className="w-80 h-96 bg-brandKoocher-pastelLime rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                     <Image 
                       src="/solucoes/gui-comemoracao.webp"
                       alt="Advogado especialista"

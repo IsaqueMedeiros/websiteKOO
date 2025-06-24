@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { Instagram, Linkedin, ArrowRight, Heart, Users, Target, Award } from 'lucide-react';
+import { Instagram, Linkedin, ArrowRight, Heart, Users, Target, Award, Calculator, TrendingUp, Scale, Shield  } from 'lucide-react';
 
 const QuemSomos = () => {
   return (
      <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <div className="flex flex-col xl:flex-row">
+      <div className="flex flex-col md:flex-row">
         {/* Purple Section */}
         <div 
           className="xl:w-1/2 flex items-center justify-center p-6 sm:p-8 lg:p-12 xl:p-16 sm:min-h-[60vh] xl:h-[20vh]"
@@ -37,20 +37,22 @@ const QuemSomos = () => {
               >
                 <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-800 rounded-full"></div>
               </div>
-              <div className="text-xl sm:text-2xl font-bold text-gray-800">KOOCHER</div>
+              <div className="text-xl sm:text-2xl font-bold text-brandKoocher-vividPurple">KOOCHER</div>
             </div>
           </div>
 
           {/* Person working on laptop */}
           <div className="h-full w-full relative overflow-hidden min-h-[300px] sm:min-h-[400px] xl:min-h-full">
-            
-                        <Image
-                          src="/quem-somos/computador.webp"
-                          alt="computador"
-                          fill
-                          className="object-cover"
-                        />
-          </div>
+  <Image
+    src="/solucoes/4788367.webp"
+    alt="computador"
+    fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    quality={95}
+    priority
+    className="object-cover"
+  />
+</div>
         </div>
       </div>
 
@@ -520,99 +522,92 @@ const QuemSomos = () => {
             </div>
 
             {/* Team showcase */}
-            <div className="relative">
-              <div 
-                className="absolute inset-0 rounded-3xl blur-2xl opacity-20 transform rotate-6"
-                style={{
-                  background: `linear-gradient(135deg, #B000FF 0%, #29003F 100%)`
-                }}
-              ></div>
-              <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-2xl">
-                <div className="text-center mb-6 sm:mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Equipe Multidisciplinar</h3>
-                  <p className="text-gray-600 text-sm sm:text-base">Especialistas dedicados exclusivamente aos médicos</p>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
-                  <div 
-                    className="p-3 sm:p-4 rounded-2xl"
-                    style={{
-                      background: `linear-gradient(135deg, #F9FFAB 0%, #E4FE2A 50%)`
-                    }}
-                  >
-                    <div 
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
-                      style={{ backgroundColor: '#F9FFAB' }}
-                    >
-                      <span 
-                        className="font-bold text-sm sm:text-base"
-                        style={{ color: '#B000FF' }}
-                      >
-                        C
-                      </span>
-                    </div>
-                    <div className="font-semibold text-gray-900 text-xs sm:text-sm">Contadores</div>
-                  </div>
-                  <div 
-                    className="p-3 sm:p-4 rounded-2xl"
-                    style={{
-                      background: `linear-gradient(135deg, #E4FE2A 0%, #F9FFAB 50%)`
-                    }}
-                  >
-                    <div 
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
-                      style={{ backgroundColor: '#E4FE2A' }}
-                    >
-                      <span 
-                        className="font-bold text-sm sm:text-base"
-                        style={{ color: '#29003F' }}
-                      >
-                        I
-                      </span>
-                    </div>
-                    <div className="font-semibold text-gray-900 text-xs sm:text-sm">Investimentos</div>
-                  </div>
-                  <div 
-                    className="p-3 sm:p-4 rounded-2xl"
-                    style={{
-                      background: `linear-gradient(135deg, #F9FFAB 0%, #E4FE2A 50%)`
-                    }}
-                  >
-                    <div 
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
-                      style={{ backgroundColor: '#F9FFAB' }}
-                    >
-                      <span 
-                        className="font-bold text-sm sm:text-base"
-                        style={{ color: '#B000FF' }}
-                      >
-                        A
-                      </span>
-                    </div>
-                    <div className="font-semibold text-gray-900 text-xs sm:text-sm">Advogados</div>
-                  </div>
-                  <div 
-                    className="p-3 sm:p-4 rounded-2xl"
-                    style={{
-                      background: `linear-gradient(135deg, #E4FE2A 0%, #F9FFAB 50%)`
-                    }}
-                  >
-                    <div 
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
-                      style={{ backgroundColor: '#E4FE2A' }}
-                    >
-                      <span 
-                        className="font-bold text-sm sm:text-base"
-                        style={{ color: '#29003F' }}
-                      >
-                        S
-                      </span>
-                    </div>
-                    <div className="font-semibold text-gray-900 text-xs sm:text-sm">Seguros</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+             <div 
+    className="absolute inset-0 rounded-3xl blur-2xl opacity-20 transform rotate-6"
+    style={{
+      background: `linear-gradient(135deg, #B000FF 0%, #29003F 100%)`
+    }}
+  ></div>
+  <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-2xl">
+    <div className="text-center mb-6 sm:mb-8">
+      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Equipe Multidisciplinar</h3>
+      <p className="text-gray-600 text-sm sm:text-base">Especialistas dedicados exclusivamente aos médicos</p>
+    </div>
+    
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
+      <div 
+        className="p-3 sm:p-4 rounded-2xl"
+        style={{
+          background: `linear-gradient(135deg, #F9FFAB 0%, #E4FE2A 50%)`
+        }}
+      >
+        <div 
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
+          style={{ backgroundColor: '#F9FFAB' }}
+        >
+          <Calculator 
+            className="w-5 h-5 sm:w-6 sm:h-6"
+            style={{ color: '#B000FF' }}
+          />
+        </div>
+        <div className="font-semibold text-gray-900 text-xs sm:text-sm">Contadores</div>
+      </div>
+      
+      <div 
+        className="p-3 sm:p-4 rounded-2xl"
+        style={{
+          background: `linear-gradient(135deg, #E4FE2A 0%, #F9FFAB 50%)`
+        }}
+      >
+        <div 
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
+          style={{ backgroundColor: '#E4FE2A' }}
+        >
+          <TrendingUp 
+            className="w-5 h-5 sm:w-6 sm:h-6"
+            style={{ color: '#29003F' }}
+          />
+        </div>
+        <div className="font-semibold text-gray-900 text-xs sm:text-sm">Investimentos</div>
+      </div>
+      
+      <div 
+        className="p-3 sm:p-4 rounded-2xl"
+        style={{
+          background: `linear-gradient(135deg, #F9FFAB 0%, #E4FE2A 50%)`
+        }}
+      >
+        <div 
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
+          style={{ backgroundColor: '#F9FFAB' }}
+        >
+          <Scale 
+            className="w-5 h-5 sm:w-6 sm:h-6"
+            style={{ color: '#B000FF' }}
+          />
+        </div>
+        <div className="font-semibold text-gray-900 text-xs sm:text-sm">Advogados</div>
+      </div>
+      
+      <div 
+        className="p-3 sm:p-4 rounded-2xl"
+        style={{
+          background: `linear-gradient(135deg, #E4FE2A 0%, #F9FFAB 50%)`
+        }}
+      >
+        <div 
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-2 sm:mb-3 flex items-center justify-center"
+          style={{ backgroundColor: '#E4FE2A' }}
+        >
+          <Shield 
+            className="w-5 h-5 sm:w-6 sm:h-6"
+            style={{ color: '#29003F' }}
+          />
+        </div>
+        <div className="font-semibold text-gray-900 text-xs sm:text-sm">Seguros</div>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
       </section>
