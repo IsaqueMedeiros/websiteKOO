@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR" cz-shortcut-listen="true">
       <body className={poppins.className} suppressHydrationWarning={true}>
         <Analytics />
-        <main className="min-h-screen bg-white">{children}</main>
+        <main className="min-h-screen overflow-x-hidden sm:w-min md:w-auto">{children}</main>
       </body>
     </html>
   )

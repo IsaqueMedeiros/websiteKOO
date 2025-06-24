@@ -3,6 +3,7 @@ import React from 'react';
 import AssessoriaKocher from '@/components/assesoria/assesoria';
 import Navbar from '@/components/ui/navbar';
 import KoocherSelector from '@/components/assesoria/assesoria-tipos';
+import Footer from '@/components/ui/footer';
 
 export default function AssesoriaPage() {
   return (
@@ -10,6 +11,7 @@ export default function AssesoriaPage() {
         <Navbar />
       <KoocherSelector />
       <AssessoriaKocher />
+      <Footer/>
     </div>
   );
 }
