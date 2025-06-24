@@ -307,7 +307,7 @@ export default function FaqKoocher() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold text-brandKoocher-deepPurple mb-4">
           Perguntas Frequentes
         </h1>
         <p className="text-lg text-gray-600">
@@ -323,7 +323,7 @@ export default function FaqKoocher() {
           >
             <button
               onClick={() => toggleItem(item.id)}
-              className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
+              className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brandKoocher-neonLime focus:ring-inset"
             >
               <span className="text-lg font-semibold text-gray-900 pr-4">
                 {item.id}. {item.question}
@@ -359,14 +359,14 @@ export default function FaqKoocher() {
       </div>
 
       <div className="mt-12 text-center">
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-blue-900 mb-2">
+        <div className="bg-brandKoocher-deepPurple border border-brandKoocher-neonLime rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-brandKoocher-neonLime mb-2">
             Ainda tem dúvidas?
           </h3>
-          <p className="text-blue-700 mb-4">
+          <p className="text-brandKoocher-neonLime mb-4">
             Entre em contato com nossos especialistas para um atendimento personalizado
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+          <button className="bg-brandKoocher-vividPurple hover:bg-brandKoocher-deepPurple text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
             Falar com Especialista
           </button>
         </div>
